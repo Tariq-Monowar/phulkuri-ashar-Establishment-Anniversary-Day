@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-image: url(img/img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.asur{
+    color: #fff;
+    position: relative;  
+}
+.img{
+    position: absolute;           
+}
+.img img{
+    width: 220px;
+    animation: bgimg 7s ease infinite;
+}
+@keyframes bgimg{
+    0%{
+        transform: scale(1.0);
+        opacity: 0;
+    }
+    12%{
+        opacity: 0.8;
+    }
+    15%{
+        opacity: 0.1;
+    }
+    25%{              
+        transform: scale(1.7);
+        opacity: 0.9;
+    }
+    50%{
+        transform: scale(1.0);
+        opacity: 0;
+    }
+    62%{
+        
+        opacity: 0.8;
+    }
+    65%{
+       
+        opacity: 0.1;
+    }
+    75%{
+       
+        transform: scale(1.7);
+        opacity: 1;
+
+    }
+    100%{
+        transform: scale(1.0);
+        opacity: 0;
+  }
+}   
+.counter-box{
+font-family: 'Lobster', cursive;
+text-align: center;
+display: inline-block;
+background-color: rgb(255, 255, 255, 0.05);
+border-radius: 15px;
+z-index: 10;
+backdrop-filter: blur(3px);
+border-top: 1px solid rgb(255, 255, 255, 0.2);
+border-left: 1px solid rgb(255, 255, 255, 0.2);
+box-shadow: 5px5px 30px rgb(0,0,0,0,0.2);
+margin:20px;
+width: 90px;
+height: 90px;
+padding: 10px;
+color: #fff;
+transform: scale(1.2);
+animation: bgimgs 7s ease infinite;
+}
+@keyframes bgimgs{
+50%{
+backdrop-filter: blur(3px);
+}
+75%{   
+backdrop-filter: blur(0px);
+}
+90%{   
+backdrop-filter: blur(3px);
+}
+}
+.counter-box h4{
+font-size: 45px;
+margin: 2px 0px;
+letter-spacing: 4px;
+}
+.counter-box span{
+font-size: 26px;
+}
+
+@media only screen and (max-width: 450px) {
+.counter{
+width: 270px;
+margin: 0px auto;
+transform: scale(1.2);
+}  
+.img img{
+    width: 230px;
+}
+.counter-box{
+transform: scale(1.1);
+margin: 10px;
+}
+}
